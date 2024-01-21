@@ -809,189 +809,179 @@ level: 2
 -->
 
 ---
-preload: false
+transition: slide-up
+layout: image-right
+image: https://patchmanager.com/wp-content/uploads/IoT-office-1200-x-628.png
 ---
 
 # Пользовательский доступ
 
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
+- 📝 **Аутентификации** - способы идентифицировать пользователя
+- 🎯 **Привязка устройств** - дополнительная аутентификация
+- 🧑‍💻 **Federated Identity** - контекст и решение
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
+<!-- Темы, связанные с пользовательским доступом к сервисам -->
 
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-      alt=""
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-      alt=""
-    />
-  </div>
+---
+transition: slide-left
+layout: image-right
+level: 2
+image: https://cdn-bpplm.nitrocdn.com/MJefRwORvlGzblepEIRIgrqQFCGliGiG/assets/static/optimized/rev-72f94ae/wp-content/uploads/2020/07/Website-Authentication_-The-Complete-Guide-with-FAQs.jpg
+---
 
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
-</div>
+# Аутентификация
+<div>Большинству приложений требуется, чтобы пользователь каким-либо образом прошел аутентификацию, чтобы иметь доступ к данным, связанным с пользователем, или другому личному контенту.</div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
+<br>
 
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
+<div>Для обеспечения правильной обработки данных необходима процедура аутентификации.</div>
 
-[Learn More](https://sli.dev/guide/animations.html#motion)
+---
+transition: slide-left
+level: 2
+---
 
-</div>
+# Аутентификация и Авторизация
+
+<img src="/authentication_vs_authorization.png" class="bg-current rounded shadow" />
+
+---
+transition: slide-left
+layout: image-right
+image: https://discover.strongdm.com/hubfs/authentication-guide.png
+level: 2
+---
+
+# Способы (Стратегии) аутентификации
+
+- 📝 **Отдельно каждым сервисом** - каждый отдельный сервис реализует процедуру аутентификации
+- 🎯 **Cервис Аутентификации** - отдельный сервис для аутентификации
+- 🧑‍💻 **API Gateway** - централизация валидации аутентификации
+
+---
+transition: slide-left
+level: 2
+---
+
+# Аутентификация внутри сервиса
+
+<img src="/auth_microservice.png" class="h-full bg-current rounded shadow" />
+
+<!-- Аутентификация внутри каждого сервиса, а в оригинале каждого микросервиса
+достаточно проблематичная задачка, ведущая к дублированию логики аутентификации в каждом сервисе
+Но зато сервисам не нужна отдельная аутентификация, но это того может не стоить -->
+
+---
+transition: slide-left
+level: 2
+---
+
+# Аутентификация внутри сервиса
+
+- 📝 **Дублирование кода**
+- 🎯 **Децентрализованая аутентификация**
+- 🧑‍💻 **Автономность сервиса**
+
+---
+transition: slide-left
+level: 2
+---
+
+# Cервис Аутентификации
+
+<img src="/auth_service.png" class="h-full bg-current rounded shadow" />
+
+<!-- Отдельно выделенный сервис аутентификации -->
+
+---
+transition: slide-left
+level: 2
+---
+
+# Cервис Аутентификации
+
+- 📝 **Использование протокола аутентификации**
+- 🎯 **Централизованная аутентификация**
+
+---
+transition: slide-left
+level: 2
+---
+
+# API Gateway
+
+<img src="/auth_api_gateway.png" class="h-full bg-current rounded shadow" />
+
+<!-- API Gateway для валидации наличия аутентификации -->
+
+---
+transition: slide-left
+level: 2
+---
+
+# API Gateway
+
+- 📝 **Использование протокола аутентификации**
+- 🎯 **Валидация наличия аутентификации**
+- 🎯 **Централизованная обработка ошибок аутентификация**
+
+---
+transition: slide-left
+layout: image-right
+image: https://fully-verified.com/wp-content/uploads/2021/08/1.png.webp
+level: 2
+---
+
+# Методы Аутентификации
+
+- 📝 **HTTP Authentication** - Базовая аутентикация основанная на HTTP auth framework-е
+- 🎯 **API Keys** - Идентификаторы для доступа к отдельному ресурсу
+- 🧑‍💻 **Token-based протоколы, OAuth 2.0** - Аутентификация посредством предосталения токена
+
+
+<!-- Речь не про методы аутентификации в общем, таких как как биометрия, пароль, сертификат и тд
+а про методы представления факта аутентификации в цифровой системе и канальной архитектуре частности -->
+
+---
+transition: slide-left
+level: 2
+---
+
+# HTTP Authentication
+
+<img src="/http_authentication.png" class="bg-current rounded shadow" />
+
+<!-- Аутентификация на основе http auth framework-а, где браузер понимает когда запрашивается аутентификация пользователя -->
+
+---
+transition: slide-left
+level: 2
+---
+
+# API Keys
+
+<img src="/api_keys.png" class="bg-current rounded shadow" />
+
+<!-- Аутентификация с помощью API ключей, где предоставленный ключ - идентифицирует пользователя, пример - google maps auth key -->
+
+---
+transition: slide-left
+level: 2
+---
+
+# Token-based authentication
+
+<img src="/token_based_auth.png" class="bg-current rounded shadow" />
+
+<!-- Аутентификация с помощью API ключей, где предоставленный ключ - идентифицирует пользователя, пример - google maps auth key -->
 
 ---
 
 # Пользовательская сессия
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
 ---
 
 # Организация API
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5, alt: 'A simple sequence diagram'}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
-  }
-}
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
-```
-
-</div>
-
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
 
 ---
 layout: center
