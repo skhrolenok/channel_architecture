@@ -66,7 +66,7 @@ API Gateway - роль api gateway-я в канальной архитектур
 
 ---
 layout: image-right
-image: https://img.freepik.com/free-vector/scan-me-qr-code_78370-2915.jpg?w=1480&t=st=1705516257~exp=1705516857~hmac=136818dc9d9054ad1295d3ddf4295778e45c3e4eed619476f9831cc70abf0171
+image: qr_code.png
 ---
 
 # Содержание
