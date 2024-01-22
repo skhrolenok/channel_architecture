@@ -1230,6 +1230,7 @@ level: 2
 transition: slide-left
 layout: center
 preload: false
+level: 2
 ---
 
 # Спасибо за внимание
