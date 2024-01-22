@@ -664,7 +664,13 @@ level: 2
 
 # Cache API
 
-<img src="/cache_api.svg" class="h-full bg-current rounded shadow" />
+<img src="/cache_api.svg" class="h-full bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 ---
 transition: slide-left
@@ -732,7 +738,13 @@ level: 2
 # Load balancer
 Без балансировки трафика
 
-<img src="/without_load_balancer.png" class="h-full bg-current rounded shadow" />
+<img src="/without_load_balancer.png" class="h-full bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 <!-- Отсутствие балансировки приводит к простоям 
 одних серверов и перегруженности других
@@ -746,7 +758,13 @@ level: 2
 # Load balancer
 С балансировкой трафика
 
-<img src="/with_load_balancer.png" class="h-full bg-current rounded shadow" />
+<img src="/with_load_balancer.png" class="h-full bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 <!-- Наличие балансировки равномерно загружает сервера работой
 -->
@@ -843,7 +861,13 @@ level: 2
 
 # Аутентификация и Авторизация
 
-<img src="/authentication_vs_authorization.png" class="bg-current rounded shadow" />
+<img src="/authentication_vs_authorization.png" class="bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 ---
 transition: slide-left
@@ -865,7 +889,13 @@ level: 2
 
 # Аутентификация внутри сервиса
 
-<img src="/auth_microservice.png" class="h-full bg-current rounded shadow" />
+<img src="/auth_microservice.png" class="h-full bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 <!-- Аутентификация внутри каждого сервиса, а в оригинале каждого микросервиса
 достаточно проблематичная задачка, ведущая к дублированию логики аутентификации в каждом сервисе
@@ -889,7 +919,13 @@ level: 2
 
 # Cервис Аутентификации
 
-<img src="/auth_service.png" class="h-full bg-current rounded shadow" />
+<img src="/auth_service.png" class="h-full bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 <!-- Отдельно выделенный сервис аутентификации -->
 
@@ -949,7 +985,13 @@ level: 2
 
 # HTTP Authentication
 
-<img src="/http_authentication.png" class="bg-current rounded shadow" />
+<img src="/http_authentication.png" class="bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 <!-- Аутентификация на основе http auth framework-а, где браузер понимает когда запрашивается аутентификация пользователя -->
 
@@ -971,7 +1013,13 @@ level: 2
 
 # Token-based authentication
 
-<img src="/token_based_auth.png" class="bg-current rounded shadow" />
+<img src="/token_based_auth.png" class="bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 <!-- Аутентификация с помощью API ключей, где предоставленный ключ - идентифицирует пользователя, пример - google maps auth key -->
 
@@ -1131,7 +1179,13 @@ level: 2
 
 # От приложений до BFF/сервисов
 
-<img src="/api_management_pl.png" class="h-full bg-current rounded shadow" />
+<img src="/api_management_pl.png" class="h-full bg-white rounded shadow" />
+
+<style>
+.bg-white {
+  background-color: #fff
+}
+</style>
 
 ---
 transition: slide-left
@@ -1205,7 +1259,7 @@ image: https://www.cisco.com/c/dam/assets/swa/img/anchor-info/graphic-network-ga
 
 - 📝 **Маршрутизация** - Прокси (reverse-proxy) для перенаправления или маршрутизации запросов (обычно HTTP-запросы) к конечным сервисам.
 - 🎯 **Композиция запросов** - Объединения несколько клиентских запросов, предназначенных для нескольких сервисов, в один клиентский запрос
-- 🚧 **Менеждмент API** - метрики и аналитика входящего трафика, тротлинг и управление доступом
+- 🚧 **Менеждмент API** - Метрики и аналитика входящего трафика, тротлинг и управление доступом
 - 🧑‍💻 **Cross cutting concerns** - Реализация задач аутентификации, обнаружения сервисов, кеширования, балансировки в один уровень
 
 ---
