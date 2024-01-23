@@ -22,7 +22,7 @@ mdc: true
 
 
 <div class="abs-br m-6 flex gap-2">
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub" title="Open in GitHub"
+  <a href="https://github.com/skhrolenok/channel_architecture" target="_blank" alt="GitHub" title="Open in GitHub"
     class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
     <carbon-logo-github />
   </a>
@@ -99,6 +99,8 @@ preload: false
 </div>
 
 <br>
+
+<!-- Определение канала, связь с клиентом и чем является канальная архитектура -->
 
 ## Типы каналов
 
@@ -283,6 +285,8 @@ image: https://media0.giphy.com/media/mq5y2jHRCAqMo/giphy.gif?cid=6c09b95236ohii
 
 ---
 transition: slide-left
+layout: image-right
+image: https://cdn.britannica.com/36/241736-159-D40F2AEC/Abstract-cryptocurrency-with-gold-bitcoin-background.jpg
 level: 2
 ---
 
@@ -298,6 +302,8 @@ level: 2
 - 🎯 **Сервис** - состоит из "fiat" системы, крипто кошелька, системы клиентского оповещения
 - 🧑‍💻 **Процедура** - мобильное приложение пошагово использует сервисы для перевода денег
 
+<!--  -->
+
 ---
 transition: slide-left
 level: 2
@@ -310,6 +316,8 @@ level: 2
 
 ---
 transition: slide-left
+layout: image-right
+image: https://holbornassets.com/wp-content/uploads/2022/12/crypto-crash-in-2022.jpg
 level: 2
 ---
 
@@ -335,6 +343,8 @@ level: 2
 
 ---
 transition: slide-left
+layout: image-right
+image: https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1434/https://s3.cointelegraph.com/storage/uploads/view/45648641ad8264649327f585b3f49171.jpg
 level: 2
 ---
 
@@ -342,13 +352,15 @@ level: 2
 
 <br>
 
-- 📝 **Бизнес логика внутри service aggregator-а может быть переиспользована**
+- 📝 **Бизнес логика внутри "service aggregator"-а может быть переиспользована**
 - 🎯 **Сохранение завершенных шагов**
 - 🧑‍💻 **Множественные сетевые запросы эффективно обрабатываются в приватной сети**
 - 🧑‍💻 **Обработка ошибок в одном месте**
 
 ---
 transition: slide-left
+layout: image-right
+image: https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2023/01/Image-2-1.jpg
 level: 2
 ---
 
@@ -376,6 +388,8 @@ level: 2
 
 ---
 transition: slide-left
+image: https://www.shutterstock.com/image-photo/error-word-inscription-concept-failure-600nw-2276892643.jpg
+layout: image-right
 level: 2
 ---
 
@@ -398,6 +412,8 @@ level: 2
 
 ---
 transition: slide-left
+layout: image-right
+image: https://st3.depositphotos.com/9116214/14524/i/450/depositphotos_145249981-stock-photo-business-statistics-success-concept-businessman.jpg
 level: 2
 ---
 
