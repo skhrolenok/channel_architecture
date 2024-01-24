@@ -426,6 +426,8 @@ level: 2
 
 ---
 transition: slide-up
+layout: image-right
+image: https://i.pinimg.com/originals/de/9f/b4/de9fb48f2acab0edcb7b4ed287546ace.jpg
 ---
 
 # Классическая канальная архитектура
@@ -456,6 +458,8 @@ level: 2
 
 ---
 transition: slide-left
+layout: image-right
+image: https://i.pinimg.com/736x/ff/de/7e/ffde7e5eef458531e25f3f685c28f359.jpg
 level: 2
 ---
 
@@ -467,6 +471,8 @@ level: 2
 
 ---
 transition: slide-left
+layout: image-right
+image: https://pusher.com/docs/static/img/hero_howitworks.png
 level: 2
 ---
 
@@ -487,6 +493,8 @@ level: 2
 
 ---
 transition: slide-left
+layout: image-right
+image: https://f.hellowork.com/blogdumoderateur/2023/09/relation-client-lexique.jpg
 level: 2
 ---
 
@@ -507,6 +515,8 @@ level: 2
 
 ---
 transition: slide-left
+layout: image-right
+image: https://img.freepik.com/premium-vector/positive-negative-line-icon-with-gears_116137-5854.jpg
 level: 2
 ---
 
@@ -527,6 +537,8 @@ level: 2
 
 ---
 transition: slide-left
+layout: image-right
+image: https://sonatafy.com/wp-content/uploads/2023/05/Software-Development-Services-3.jpg
 level: 2
 ---
 
