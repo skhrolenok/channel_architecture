@@ -324,7 +324,7 @@ level: 2
 
 ## Пошаговое и прямое использование API сервисов - канал "перегружен"
 
-<img src="/money_exchange_bad.png" class="h-full rounded shadow" />
+<img src="/money_exchange_bad.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -352,7 +352,7 @@ level: 2
 
 ## Один запрос для композитной услуги через <u>сервис агрегатор</u> канального уровня
 
-<img src="/money_exchange_good.png" class="h-full rounded shadow" />
+<img src="/money_exchange_good.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -398,7 +398,7 @@ level: 2
 
 ## Работа с персональными и важными данными <u>напрямую в канальном приложении</u>
 
-<img src="/accounting_api_bad.png" class="h-full rounded shadow" />
+<img src="/accounting_api_bad.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -423,7 +423,7 @@ level: 2
 
 ## Работа с персональными и важными данными передана сервису
 
-<img src="/accounting_api_good.png" class="h-full rounded shadow" />
+<img src="/accounting_api_good.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -460,7 +460,7 @@ level: 2
 
 # Канальная архитектура - границы и компоненты
 
-<img src="/channel_architecture_layered.png" class="h-full rounded shadow" />
+<img src="/channel_architecture_layered.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -469,7 +469,7 @@ level: 2
 
 # Канальная архитектура - границы и компоненты
 
-<img src="/channel_architecture_layered_borders.png" class="h-full rounded shadow" />
+<img src="/channel_architecture_layered_borders.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -495,7 +495,7 @@ level: 2
 
 - 📝 **Канал** - это способ предложить, предоставить и организовать обслуживание <u>клиента.</u>
 - 🎯 **Канал обслуживания** - точка входа для предосталения и распространения услуги. Мобильное или десктоп приложение, вебсайт.
-- 🧑‍💻 **Множество каналов** - для покрытия большего числа клиентов
+- 🧑‍💻 **Множество каналов** - для покрытия б**о**льшего числа клиентов
 
 ---
 transition: slide-left
@@ -504,7 +504,7 @@ level: 2
 
 # Каналы
 
-<img src="/channel.png" class="h-full rounded shadow" />
+<img src="/channel.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -542,7 +542,7 @@ level: 2
 
 # Клиенты
 
-<img src="/clients.png" class="rounded shadow" />
+<img src="/clients.png" class="rounded" />
 
 ---
 transition: slide-left
