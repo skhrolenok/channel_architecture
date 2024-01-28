@@ -551,7 +551,7 @@ image: https://img.freepik.com/premium-vector/positive-negative-line-icon-with-g
 level: 2
 ---
 
-# Провайдеры aka domain (skip)
+# Провайдеры aka Продуктовый/Доменный сервис
 
 - 📝 **Провайдер услуги** - это сущность предоставляющая сервис, например другому сервису
 - 🎯 **Провайдер и сервис** - отношения между провайдером и сервисом регулируются SLA
@@ -564,7 +564,7 @@ level: 2
 
 # Провайдеры
 
-<img src="/provider.png" class="h-full rounded shadow" />
+<img src="/provider.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -586,7 +586,7 @@ level: 2
 
 # Сервисы
 
-<img src="/service.png" class="rounded shadow" />
+<img src="/service.png" class="rounded" />
 
 <!--
 Presenter note with **bold**, *italic*, and ~~striked~~ text.
@@ -704,7 +704,7 @@ level: 2
 
 <br>
 
-<img src="/caching_layers.png" class="h-full rounded shadow" />
+<img src="/caching_layers.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -722,7 +722,7 @@ level: 2
 
 <br>
 
-<img src="/caching_types.png" class="rounded shadow" />
+<img src="/caching_types.png" class="rounded" />
 
 ---
 transition: slide-left
@@ -748,20 +748,26 @@ level: 2
 
 # HTTP Caching
 
-<img src="/http_caching.png" class="h-full rounded shadow" />
+<img src="/http_caching.png" class="h-full rounded" />
 
 ---
 transition: slide-left
 level: 2
+layout: image-right
+image: https://www.seekpng.com/png/full/74-740835_noun-project-gear-icon-vector-png.png
 ---
 
 # Cache API (For frontend)
 
-<img src="/cache_api.svg" class="h-full bg-white rounded shadow" />
+<img src="/cache_api.svg" class="h-full bg-white rounded img-padding" />
 
 <style>
+.img-padding {
+  padding-bottom: 60px;
+}
+
 .bg-white {
-  background-color: #fff
+  background-color: #fff;
 }
 </style>
 
@@ -772,7 +778,17 @@ level: 2
 
 # Custom Local Cache
 
-<img src="/custom_local_cache.png" class="h-full rounded shadow" />
+<img src="/custom_local_cache.png" class="h-full img-padding rounded" />
+
+<style>
+.img-padding {
+  padding-bottom: 20px;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+</style>
 
 ---
 transition: slide-left
@@ -825,9 +841,7 @@ level: 2
 
 ## Проблема <u>распределения нагрузки</u>, входящего трафика
 
-<br>
-
-<img src="/load_balancer.png" class="h-full rounded shadow" />
+<img src="/load_balancer.png" class="h-full rounded" />
 
 <!-- Балансировщик - распределяет трафик по различным целям
 бывает реализован в кач-ве устройства (hardware железка) так и програмным (nginx)
@@ -842,11 +856,14 @@ level: 2
 
 ## <u>Отсутствие</u> балансировки трафика
 
-<img src="/without_load_balancer.png" class="h-full bg-white rounded shadow" />
+<img src="/without_load_balancer.png" class="h-full img-padding bg-white rounded" />
 
 <style>
 .bg-white {
   background-color: #fff
+}
+.img-padding {
+  padding-bottom: 30px;
 }
 </style>
 
@@ -863,11 +880,14 @@ level: 2
 
 ## <u>Наличие</u> балансировки трафика
 
-<img src="/with_load_balancer.png" class="h-full bg-white rounded shadow" />
+<img src="/with_load_balancer.png" class="h-full img-padding bg-white rounded" />
 
 <style>
 .bg-white {
   background-color: #fff
+}
+.img-padding {
+  padding-bottom: 30px;
 }
 </style>
 
@@ -883,7 +903,13 @@ level: 2
 
 <div>API Gateway может выполнять балансировку трафика или находится перед балансировщиком</div>
 
-<img src="/load_balancer_api_gateway.png" class="h-full bg-current rounded" />
+<img src="/load_balancer_api_gateway.png" class="h-full img-padding bg-current rounded" />
+
+<style>
+.img-padding {
+  padding-bottom: 20px;
+}
+</style>
 
 <!-- API Gateway может в балансировку!
 или находится перед балансировщиками (тогда возможно нет смысла использовать балансеры типа L7)
@@ -914,7 +940,13 @@ level: 2
 
 # Open-source software Load balancer
 
-<img src="/software_load_balancer.png" class="h-full bg-current rounded" />
+<img src="/software_load_balancer.png" class="h-full img-padding bg-current rounded" />
+
+<style>
+.img-padding {
+  padding-bottom: 15px;
+}
+</style>
 
 <!-- Kong - популярный api gateway с функциями балансера
 -->
@@ -982,7 +1014,7 @@ level: 2
 
 # Аутентификация внутри сервиса
 
-<img src="/auth_microservice.png" class="h-full bg-white rounded shadow" />
+<img src="/auth_microservice.png" class="bg-white rounded" />
 
 <style>
 .bg-white {
@@ -1043,7 +1075,7 @@ level: 2
 
 # API Gateway
 
-<img src="/auth_api_gateway.png" class="h-full bg-current rounded shadow" />
+<img src="/auth_api_gateway.png" class="h-full rounded" />
 
 <!-- API Gateway для валидации наличия аутентификации -->
 
