@@ -1046,7 +1046,7 @@ level: 2
 
 # Cервис Аутентификации
 
-<img src="/auth_service.png" class="h-full bg-white rounded shadow" />
+<img src="/auth_service.png" class="h-full bg-white rounded" />
 
 <style>
 .bg-white {
@@ -1278,7 +1278,13 @@ level: 2
 
 # Отсутствие пользовательской сессии
 
-<img src="/no_session_management.png" class="h-full bg-current rounded shadow" />
+<img src="/no_session_management.png" class="h-full img-padding rounded" />
+
+<style>
+.img-padding {
+  padding-bottom: 20px;
+}
+</style>
 
 ---
 transition: slide-left
@@ -1287,7 +1293,13 @@ level: 2
 
 # Управление сессией внутри приложения
 
-<img src="/session_management_pl.png" class="h-full bg-current rounded shadow" />
+<img src="/session_management_pl.png" class="h-full img-padding rounded" />
+
+<style>
+.img-padding {
+  padding-bottom: 20px;
+}
+</style>
 
 <!-- Фактически внутри презентационного слоя -->
 
@@ -1298,7 +1310,13 @@ level: 2
 
 # Управление сессией внутри бизнес слоя
 
-<img src="/session_management_app.png" class="h-full bg-current rounded shadow" />
+<img src="/session_management_app.png" class="h-full img-padding rounded" />
+
+<style>
+.img-padding {
+  padding-bottom: 20px;
+}
+</style>
 
 <!-- Фактически внутри презентационного слоя -->
 
@@ -1320,11 +1338,14 @@ level: 2
 
 # От приложений до BFF/сервисов
 
-<img src="/api_management_pl.png" class="h-full bg-white rounded shadow" />
+<img src="/api_management_pl.png" class="h-full img-padding bg-white rounded" />
 
 <style>
 .bg-white {
   background-color: #fff
+}
+.img-padding {
+  padding-bottom: 10px;
 }
 </style>
 
