@@ -1477,7 +1477,7 @@ level: 2
 
 # API Gateway / BFF
 
-<img src="/api_gateway_bff.png" class="bg-current rounded shadow" />
+<img src="/api_gateway_bff.png" class="bg-current rounded" />
 
 ---
 transition: slide-left
